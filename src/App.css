@@ -1,38 +1,144 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&display=swap');
+
+.body{
+  background-color:#fff
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+  border-radius: 0px;
+}
+
+.navbar{
+  height:55px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: #000;
+  position: fixed;
+  z-index: 10;
+  top:0;
+}
+
+.navbar img{
+ height:45px;
+ margin-top: 5px;
+}
+
+.app{
+  /* background-color: black; */
+  height:100%;
+  width: 100%;
+}
+
+.wel{
+  width:100%;
+  text-align: center;
+  margin-top: 160px;
+  color:#fff;
+  font-family: 'Girassol', cursive;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.cf{
+  font-size: 70px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.video{
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  width:70%;
+  margin:auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video form {
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.video form input{
+  width:25px;
+  height:15px
+}
+
+
+.videoItem{
+
+}
+
+.welE{
+  width:80%;
+  text-align: center;
+  margin:auto;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  color:#fff;
+  font-family: 'Girassol', cursive;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.ybutton{
+  width: 50px;
+  position: absolute;
+  left:45%;
+  right:55%;
+  margin-top:-75px;
+}
+li{
+  list-style: none;
+
+}
+a{
+  text-decoration: none;
+  color:rgb(255, 255, 255)
+}
+
+a:hover{
+  color:rgb(0, 238, 255)
+}
+@media only screen and (max-width: 992px) {
+  .navbar{
+    height:40px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .navbar img{
+    height:30px;
+    margin-top: 5px;
+   }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+   .ybutton{
+    width: 50px;
+    position: absolute;
+    left:35%;
+    right:60%;
+    margin-top:-75px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.video{
+  width: 90%;
 }
+
+}
+
+

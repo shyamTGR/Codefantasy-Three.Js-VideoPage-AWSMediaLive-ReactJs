@@ -1,13 +1,16 @@
+import { Sugar } from 'react-preloaders';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
+    <Sugar color={'#fff'} background={"#000"} animation={"slide-down"} />
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 
